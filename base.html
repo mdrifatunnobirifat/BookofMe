@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Book Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right"></div>
+
+        <div class="book">
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="https://via.placeholder.com/180" alt="Profile Image">
+                    <h1>Your Name</h1>
+                    <h3>Your Title</h3>
+
+                    <div class="social-media">
+                        <a href="#"><i class="bx bxl-facebook"></i></a>
+                        <a href="#"><i class="bx bxl-instagram"></i></a>
+                        <a href="#"><i class="bx bxl-linkedin"></i></a>
+                    </div>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere sem in arcu pharetra, eget dictum nulla cursus.</p>
+
+                    <div class="btn-box">
+                        <a href="#" class="btn">Download CV</a>
+                        <a href="#" class="btn contact-me">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="book-page page-right" id="page1">
+                <div class="page-front">
+                    <h1 class="title">Experience</h1>
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class="bx bx-calendar"></i>2023</span>
+                            <h3>Web Developer</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <span class="number-page">1</span>
+                    <span class="nextprev-btn" data-page="page1">&#10095;</span>
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Education</h1>
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class="bx bx-calendar"></i>2020</span>
+                            <h3>Bachelor of Science</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <span class="number-page">2</span>
+                    <span class="nextprev-btn back" data-page="page1">&#10094;</span>
+                </div>
+            </div>
+
+            <div class="book-page page-right" id="page2">
+                <div class="page-front">
+                    <h1 class="title">Services</h1>
+                    <div class="services-box">
+                        <div class="services-content">
+                            <i class="bx bx-code-alt"></i>
+                            <h3>Web Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                    <span class="number-page">3</span>
+                    <span class="nextprev-btn" data-page="page2">&#10095;</span>
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Skills</h1>
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <h3>Frontend</h3>
+                            <div class="content">
+                                <span><i class="bx bxl-html5"></i>HTML</span>
+                                <span><i class="bx bxl-css3"></i>CSS</span>
+                                <span><i class="bx bxl-javascript"></i>JS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="number-page">4</span>
+                    <span class="nextprev-btn back" data-page="page2">&#10094;</span>
+                </div>
+            </div>
+
+            <div class="book-page page-right" id="page3">
+                <div class="page-front">
+                    <h1 class="title">Portfolio</h1>
+                    <div class="portfolio-box">
+                        <div class="img-box"><img src="https://via.placeholder.com/300x200" alt=""></div>
+                        <div class="info-box">
+                            <div class="info-title"><h3>Project 1</h3></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <span class="number-page">5</span>
+                    <span class="nextprev-btn" data-page="page3">&#10095;</span>
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Contact Me</h1>
+                    <div class="contact-box">
+                        <input type="text" class="field" placeholder="Name">
+                        <input type="email" class="field" placeholder="Email">
+                        <textarea class="field" placeholder="Message"></textarea>
+                        <button class="btn">Send</button>
+                    </div>
+                    <span class="number-page">6</span>
+                    <span class="nextprev-btn back" data-page="page3">&#10094;</span>
+                    <button class="back-profile">&#8634;<p>Back</p></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
