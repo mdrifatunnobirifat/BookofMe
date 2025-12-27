@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 *{
     margin: 0;
@@ -9,8 +8,8 @@
     outline: none;
 }
 :root {
-    --bg-color: #151f28;
-    --main-color: #00abf0;
+    --bg-color: #020b14;
+    --main-color: #f5888c;
     --text-color: #333;
     --second-text-color: #555;
     --white-color:#fff;
@@ -25,18 +24,21 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh; 
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    background-color:#171528;
+    color:rgb(133, 170, 252);
     overflow: hidden;
     font-family: "Nunito", sans-serif;
+    color: wheat;
 }
 .wrapper{
     position: relative;
-    width: 66rem;
-    height: 45rem;
+    width: 60rem;
+    height: 47rem;
     padding: 2rem;
     perspective: 250rem;
     animation: show-animate 2s forwards;
+    
+
 }
 @keyframes show-animate {
     0%,
@@ -63,7 +65,7 @@ body{
     transform-origin: right;
 }
 .cover.cover-left{
-    z-index: -1;
+    z-index: 200;
 }
 .cover.cover-right{
     z-index: 100;
@@ -84,7 +86,7 @@ body{
     position: absolute;
     width: 50%;
     height: 100%;
-    background: var(--pages-color);
+    background:#21353e;
     box-shadow: 0 0 .6rem rgba(0,0,0,0.1);
     display: flex;
     padding: 2rem;
@@ -97,6 +99,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 .profile-page img{
      max-width: 180px;
@@ -111,29 +114,10 @@ body{
 .profile-page h3{
     color: var(--main-color);
     font-size: 1.5rem;
-}
-.profile-page .social-media {
-    margin: .6rem .8rem;
-}
-.profile-page .social-media a{
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 2.5rem;
-    height: 2.5rem;
-    background: transparent;
-    border: var(--border);
-    border-radius: 50%;
-    font-size: 1.3rem;
-    color: var(--main-color);
-    margin: 0 .2rem;
-    transition: .5s;
 
 }
-.profile-page .social-media a:hover{
-    background-color: var(--main-color);
-    color: var(--white-color);
-}
+
+
 .profile-page p {
     text-align: justify;
     font-size: 1.1rem;
@@ -182,14 +166,16 @@ body{
 }
 
 .book-page .page-front,
-.book-page .page-back{
+.book-page .page-back,
+.book-page .page-left,
+.book-page .page-right{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--pages-color);
-    padding: 1.5rem 2rem;
+    background-image:url("backgroundimage.png");
+   
 }
 .book-page .page-front{
     transform: rotateY(0deg) translateZ(1px);
@@ -463,7 +449,14 @@ body{
     color: var(--main-color);
 }
 .back-profile:hover p{
-    opacity: 1;
+    opacity: 100;
     transform: translateX(-50%) scale(1);
     top: -1.8rem;
+}
+
+.social-icon
+{
+    width:40px;
+    height:40px;
+    object-fit:contain;
 }
